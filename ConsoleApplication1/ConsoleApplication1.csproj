@@ -130,9 +130,17 @@
     <Compile Include="chap3\DeleTest.cs" />
     <Compile Include="chap3\MoneyTest.cs" />
     <Compile Include="chap4\Serialize\XmlSerializerEx.cs" />
+    <Compile Include="chap5\ActionFunc.cs" />
     <Compile Include="chap5\AsyncAwaitTest.cs" />
     <Compile Include="chap5\BCLAsyncTest.cs" />
+    <Compile Include="chap5\BCLAsyncTest2.cs" />
     <Compile Include="chap5\CallerInfo.cs" />
+    <Compile Include="chap5\CollectionLambda.cs" />
+    <Compile Include="chap5\ExtensionMethod.cs" />
+    <Compile Include="chap5\TaskAsync.cs" />
+    <Compile Include="chap5\TaskParallel.cs" />
+    <Compile Include="chap5\TaskType.cs" />
+    <Compile Include="chap5\ThreadParallel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -9,26 +9,21 @@
 //{
 //    class BCLAsyncTest
 //    {
-//        public static async void Main()
+//        public static void Main()
 //        {
-//            WebClient wc = new WebClient();
-//            // wc.Encoding = Encoding.UTF8; //인코딩 해주기
+//            AwaitDownloadString();
 
-//            byte[] buf = await wc.DownloadDataTaskAsync("http://www.naver.com");
-//            string text = Encoding.UTF8.GetString(buf);
-//            Console.WriteLine(text);
-
-//            //wc.DownloadStringCompleted += wc_DownloadStringCompleted; //이벤트 등록
-
-//            ////DownloadString의 비동기 메서드
-//            //wc.DownloadStringAsync(new Uri("http://www.naver.com"));
-
-//            //Console.ReadLine();
+//            Console.ReadLine();
 //        }
 
-//        //static void wc_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-//        //{
-//        //    Console.WriteLine(e.Result);
-//        //}
+//        private static async void AwaitDownloadString()
+//        {
+//            WebClient wc = new WebClient();
+//            wc.Encoding = Encoding.UTF8;
+
+//            //DownloadStringAsync보다 더 간편하게 이용 가능.
+//            string text = await wc.DownloadStringTaskAsync("http://www.naver.com");
+//            Console.WriteLine(text);
+//        }
 //    }
 //}
